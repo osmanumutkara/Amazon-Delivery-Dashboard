@@ -32,10 +32,10 @@ and visualized through an **interactive dashboard**.
 ---
 
 ## 📷 Dashboard Preview  
-![Dashboard Screenshot](docs/dashboard_screenshot.png)  
+![Dashboard Screenshot](docs/screenshot.png)  
 
 ## 🗂️ Data Model (Star Schema)  
-![Star Schema](model/star_schema.png)  
+![Star Schema](model/model_screenshot.png)  
 
 
  
