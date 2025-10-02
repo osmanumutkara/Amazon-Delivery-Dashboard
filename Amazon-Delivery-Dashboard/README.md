@@ -1,33 +1,40 @@
-# Amazon Delivery Performance Dashboard
+# Amazon Delivery Performance Dashboard  
 
-## 📌 Project Overview
+## 📌 Project Overview  
+This project analyzes **Amazon Delivery performance** using **Power BI**.  
+The dataset was obtained from **Kaggle**, transformed via **Power Query ETL** into a **Star Schema**,  
+and visualized through an **interactive dashboard**.  
 
-This project analyzes Amazon Delivery performance using Power BI.
-The dataset (from Kaggle) was transformed via Power Query ETL into a Star Schema,
-and an interactive dashboard was built.
+---
 
-## 🔧 Tools \& Technologies
+## 🔧 Tools & Technologies  
+- Power BI – Dashboard & Data Visualization  
+- Power Query – ETL (Data Cleaning & Transformation)  
+- Star Schema – Data Modeling  
+- Kaggle Dataset – Source Data  
 
-* Power BI
-* Power Query (ETL)
-* Star Schema Data Modeling
-* Kaggle Dataset
+---
 
-## 📊 KPIs
+## 📊 Key KPIs  
+- **On-Time Delivery Rate**  
+- **Average Delivery Time (minutes)**  
+- **Total Deliveries**  
+- **Agent Rating**  
 
-* On-Time Delivery Rate
-* Average Delivery Time
-* Total Deliveries
-* Agent Rating
+---
 
-## 📂 Project Workflow
+## 📂 Project Workflow  
+1. Downloaded dataset from Kaggle  
+2. Performed ETL with Power Query (cleaning & transformation)  
+3. Built **Star Schema** data model  
+4. Created **Power BI dashboard** with KPIs and visuals  
 
-1. Kaggle dataset download
-2. Power Query ETL
-3. Star Schema modeling
-4. Power BI dashboard creation
+---
 
+## 📷 Dashboard Preview  
+![Dashboard Screenshot](docs/dashboard_screenshot.png)  
 
+## 🗂️ Data Model (Star Schema)  
+![Star Schema](model/star_schema.png)  
 
-⚡ This project demonstrates the full process of going from raw data → Power Query ETL → Star Schema → dashboard, a valuable step in real-world Business Intelligence projects.
 
