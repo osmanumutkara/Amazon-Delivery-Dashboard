@@ -1,0 +1,62 @@
+ETL Process Documentation (Power Query)
+1. Data Source
+
+Imported Amazon Delivery dataset from Kaggle.
+
+The dataset was initially a flat table containing delivery details (agent, vehicle, area, traffic, weather, etc.).
+
+2. Data Cleaning
+
+Removed duplicate rows.
+
+Standardized column names (e.g., Delivery_Time → Delivery_Time_Minutes).
+
+Fixed inconsistent text values (e.g., “urban”, “Urban”, “URBAN” → standardized to Urban).
+
+Handled null/missing values:
+
+Replaced missing categorical values with “Unknown”.
+
+Removed invalid rows with negative or zero delivery time.
+
+3. Data Transformation
+
+Converted categorical fields (Area, Traffic, Vehicle, Weather, Category) into dimension tables.
+
+Created surrogate keys (ID columns) for each dimension table:
+
+Area_ID, Traffic_ID, Vehicle_ID, Weather_ID, Category_ID.
+
+Built a Fact_Deliveries table with measures and foreign keys.
+
+4. Star Schema Design
+
+Fact_Deliveries (metrics such as Delivery Time, Agent Age, Agent Rating).
+
+Dim_Area (Area_ID, Area).
+
+Dim_Traffic (Traffic_ID, Traffic).
+
+Dim_Vehicle (Vehicle_ID, Vehicle).
+
+Dim_Weather (Weather_ID, Weather).
+
+Dim_Category (Category_ID, Category).
+
+Dim_Date (Date_ID, Day_Name, Month, Month_Name, Order_Date).
+
+5. Data Quality Improvements
+
+Validated relationships between dimensions and fact table (1-to-many).
+
+Ensured all foreign key columns in Fact table matched with dimension IDs.
+
+Standardized date fields for use in time intelligence (Month, Day_Name, Order_Date).
+
+Verified numeric columns (Delivery Time, Agent Rating) were correctly typed as Decimal/Whole Number.
+
+6. Output
+
+Final dataset modeled in Star Schema.
+
+Published into Power BI for dashboard building.
